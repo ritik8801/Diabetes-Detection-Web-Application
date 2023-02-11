@@ -12,7 +12,7 @@ from src.modelbuilding.model import ModelBuilding
 def test_split(mocker):
     mocker.patch("src.modelbuilding.model.ModelBuilding.train", return_value=None)
     mocker.patch("src.modelbuilding.model.ModelBuilding.predict", return_value=None)
-    df = pd.read_csv("tests/unit_tests/test_data/sample.csv")
+    df = pd.read_csv("https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/sample.csv")
     class plot:
         def __init__(self, df, path):
             print("mock init")
@@ -29,7 +29,7 @@ def test_split(mocker):
 
 @pytest.fixture()
 def sample_split(mocker):
-    data = pd.read_csv("tests/unit_tests/test_data/sample.csv")
+    data = pd.read_csv("https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/sample.csv")
     X = data[['Pregnancies', 'Glucose', 'BloodPressure',
        'SkinThickness', 'Insulin',
        'BMI', 'DiabetesPedigreeFunction', 'Age']]
