@@ -9,7 +9,7 @@ from src.preprocessing.dataloading import DataIngestion
 
 
 def test_load_data():
-    path = "tests/unit_tests/test_data/sample.csv"
+    path = "https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/sample.csv"
     di = DataIngestion()
     df = di.load_data(path)
     assert isinstance(df, pd.DataFrame)
