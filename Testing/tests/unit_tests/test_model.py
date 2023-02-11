@@ -34,14 +34,6 @@ def test_train(mocker, sample_split):
     mocker.patch("src.modelbuilding.model.ModelBuilding.split", return_value=None)
     mocker.patch("src.modelbuilding.model.ModelBuilding.predict", return_value=None)
     df = pd.read_csv("https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/sample.csv")
-    class plot:
-        def __init__(self, df, path):
-            print("mock init")
-        def hist_observation():
-            print("mock hist")
-        def heatmap_obervation():
-            print("mock heatmap- no saving")
-    mocker.patch.object(M, "Plot", plot)
     print("sample split")
     print(sample_split[0])
     m = ModelBuilding(df, X_train= sample_split[0], X_test=sample_split[1],
