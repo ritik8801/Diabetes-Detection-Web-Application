@@ -30,7 +30,7 @@ jobs:
         pytest
     - name: Install dependencies
       run: |
-        pip install pdoc
+        pip install --upgrade pdoc
         
     - name: Generate documentation
       run: |
