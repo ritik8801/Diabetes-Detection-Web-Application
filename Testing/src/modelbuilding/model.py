@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 class ModelBuilding:
 
-    def __init__(self, df, X_train=None, X_test=None,
+    def __init__(self, df, path=None, X_train=None, X_test=None,
     y_train=None, y_test=None):
         self.data = df
         self.X_train = X_train
