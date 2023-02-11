@@ -37,4 +37,4 @@ jobs:
 
     - name: Build Documentation
       run: |
-        pdoc3 --html -o docs Testing
+        pdoc3 --html -o docs Testing/tests/
