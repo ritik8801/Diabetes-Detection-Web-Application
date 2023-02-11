@@ -9,14 +9,14 @@ from src.preprocessing.plots import Plot
 
 def test_hist_observation(mocker):
     mocker.patch("src.preprocessing.plots.Plot.hist_observation", return_value=None)
-    path = "tests/unit_tests/test_data"
+    path = "https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/"
     data = pd.read_csv("https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/sample.csv")
     p = Plot(data, path)
-    assert os.path.isfile("tests/unit_tests/test_data/histogram.png")
+    assert os.path.isfile("https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/histogram.png")
 
 def test_heatmap_observation(mocker):
     mocker.patch("src.preprocessing.plots.Plot.heatmap_observation", return_value=None)
-    path = "tests/unit_tests/test_data"
+    path = "https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/"
     data = pd.read_csv("https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/sample.csv")
     p = Plot(data, path)
-    assert os.path.isfile("tests/unit_tests/test_data/heatmap.png")
+    assert os.path.isfile("https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/heatmap.png")
