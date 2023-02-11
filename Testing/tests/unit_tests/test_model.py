@@ -73,5 +73,7 @@ def test_visualize(mocker, sample_split):
     y_train=sample_split[2], y_test=[33, 34, 77], path="test_data")
     m.y_pred = [35, 22, 79]
     m.visualize("https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/comparison.png")
-    assert os.path.isfile("https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/comparison.png")
+    path = "https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/comparison.png"
+    response = requests.get(path)
+    assert response.status_code == 200
 
