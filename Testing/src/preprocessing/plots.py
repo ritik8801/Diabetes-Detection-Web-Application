@@ -14,7 +14,8 @@ class Plot:
     def hist_observation(self):
         fig, ax = plt.subplots()
         self.data[['Insulin', 'Glucose', 'BloodPressure',]].hist(bins=30, figsize=(1500,1000), ax=ax)
-        fig.savefig("{}/histogram.png".format(self.path))
+        path = "https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/histogram.png"
+        fig.savefig(path)
 
     def heatmap_observation(self):
         fig, ax = plt.subplots()
@@ -22,4 +23,5 @@ class Plot:
        'SkinThickness', 'Insulin',
        'BMI', 'DiabetesPedigreeFunction', 'Age', 'Outcome']]
         dataplot = sns.heatmap(d.corr(), annot=True, cmap="YlGnBu")
-        fig.savefig("{}/heatmap.png".format(self.path))
+        path = "https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/heatmap.png"
+        fig.savefig(path)
