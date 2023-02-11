@@ -28,21 +28,3 @@ jobs:
     - name: Run Pytest
       run: |
         pytest
-    - name: Install dependencies
-      run: |
-        pip install --upgrade pdoc
-        
-    - name: Generate documentation
-      run: |
-        pdoc --force --html --output-dir docs .
-         
-
-    - name: Deploy documentation
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs
-
-
-
-
