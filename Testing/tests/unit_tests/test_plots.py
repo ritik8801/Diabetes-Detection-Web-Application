@@ -12,9 +12,20 @@ def test_hist_observation(mocker):
     path = "https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/"
     data = pd.read_csv("https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/sample.csv")
     p = Plot(data, path)
+    import os
+    url = "https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/histogram.png"
+    if os.path.isfile(url):
+        print("The file exists.")
+    else:
+        print("The file does not exist.")
 
 def test_heatmap_observation(mocker):
     mocker.patch("src.preprocessing.plots.Plot.heatmap_observation", return_value=None)
     path = "https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/"
     data = pd.read_csv("https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/sample.csv")
     p = Plot(data, path)
+    url = "https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/heatmap.png"
+    if os.path.isfile(url):
+        print("The file exists.")
+    else:
+        print("The file does not exist.")
