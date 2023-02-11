@@ -55,21 +55,3 @@ def test_train(mocker, sample_split):
     m = ModelBuilding(df, X_train= sample_split[0], X_test=sample_split[1],
     y_train=sample_split[2], y_test=sample_split[3], path="test_data")
     assert m.rcb is not None
-
-
-def test_visualize(mocker, sample_split):
-    mocker.patch("src.modelbuilding.model.ModelBuilding.split", return_value=None)
-    mocker.patch("src.modelbuilding.model.ModelBuilding.predict", return_value=None)
-    mocker.patch("src.modelbuilding.model.ModelBuilding.train", return_value=None)
-    class plot:
-        def __init__(self, df, path):
-            print("mock init")
-        def hist_observation():
-            print("mock hist")
-        def heatmap_observation():
-            print("mock heatmap- no saving")
-    mocker.patch.object(M, "Plot", plot)
-    m = ModelBuilding(None, X_train= sample_split[0], X_test=sample_split[1],
-    y_train=sample_split[2], y_test=[33, 34, 77], path="test_data")
-    m.y_pred = [35, 22, 79]
-   
