@@ -22,9 +22,7 @@ def test_heatmap_observation(mocker):
     path = "https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/heatmap.png"
     data = pd.read_csv("https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/sample.csv")
     p = Plot(data, path)
-    try:
-        assert os.path.isfile("https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/heatmap.png")
-    except FileNotFoundError:
-        print("File not found, please verify the path")
+    assert os.path.isfile("https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/heatmap.png")
+    
 
     
