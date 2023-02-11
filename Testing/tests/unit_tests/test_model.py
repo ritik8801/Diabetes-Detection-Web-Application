@@ -41,7 +41,7 @@ def sample_split(mocker):
 def test_train(mocker, sample_split):
     mocker.patch("src.modelbuilding.model.ModelBuilding.split", return_value=None)
     mocker.patch("src.modelbuilding.model.ModelBuilding.predict", return_value=None)
-    df = pd.read_csv("tests/unit_tests/test_data/sample.csv")
+    df = pd.read_csv("https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/sample.csv")
     class plot:
         def __init__(self, df, path):
             print("mock init")
