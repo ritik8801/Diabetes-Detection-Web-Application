@@ -13,14 +13,6 @@ def test_split(mocker):
     mocker.patch("src.modelbuilding.model.ModelBuilding.train", return_value=None)
     mocker.patch("src.modelbuilding.model.ModelBuilding.predict", return_value=None)
     df = pd.read_csv("https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/sample.csv")
-    class plot:
-        def __init__(self, df, path):
-            print("mock init")
-        def hist_observation():
-            print("mock hist")
-        def heatmap_observation():
-            print("mock heatmap- no saving")
-    mocker.patch.object(M, "Plot", plot)
     m = ModelBuilding(df, path="test_data")
     assert isinstance(m.X_train, pd.DataFrame)
     assert isinstance(m.X_test, pd.DataFrame)
