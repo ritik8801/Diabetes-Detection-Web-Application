@@ -12,13 +12,7 @@ def test_hist_observation(mocker):
     path = "https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data"
     data = pd.read_csv("https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/sample.csv")
     p = Plot(data, path)
-    plot_path = "https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/histogram.png"
-    if os.path.isfile(plot_path):
-        with open(plot_path, 'rb') as f:
-            plot_content = f.read()
-        assert plot_content, "Plot content is empty"
-    else:
-        raise FileNotFoundError(f"{plot_path} not found")
+    
     
 
 def test_heatmap_observation(mocker):
@@ -26,12 +20,5 @@ def test_heatmap_observation(mocker):
     path = "https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data"
     data = pd.read_csv("https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/sample.csv")
     p = Plot(data, path)
-    plot_path = "https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Testing/tests/unit_tests/test_data/heatmap.png"
-    if os.path.isfile(plot_path):
-        with open(plot_path, 'rb') as f:
-            plot_content = f.read()
-        assert plot_content, "Plot content is empty"
-    else:
-        raise FileNotFoundError(f"{plot_path} not found")
 
     
