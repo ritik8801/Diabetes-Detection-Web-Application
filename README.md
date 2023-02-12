@@ -4,7 +4,7 @@ This repository contains a python app which predicts diabetes based on user inpu
 
 This project is deployed online with the use of streamlit cloud.
 Link to website can be found here:
-https://ritik8801-diabetes-detection--diabetes-detection-web-app-xg5hgo.streamlit.app/
+https://diabetesdetectionwebsite.streamlit.app/
 
 Some extra code is also implemented to perform test, create dsl structure.You can view this in the Testing folder of this repository.
 
