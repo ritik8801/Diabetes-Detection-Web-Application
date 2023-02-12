@@ -6,7 +6,7 @@ import streamlit as st
 import numpy as np
 
 #Get the data
-df = pd.read_csv("D:\Diabetes Detection Web Application\Project Code and Dataset\diabetes.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/ritik8801/Diabetes-Detection-Web-Application/main/Project%20Code%20and%20Dataset/diabetes.csv")
 
 #set a subheader 
 st.subheader('Data information')
