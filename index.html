@@ -1,0 +1,699 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.12">
+    
+    
+      
+        <title>Project Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.0d440cfe.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#project-documentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Project Docs" class="md-header__button md-logo" aria-label="Project Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Project Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Project Documentation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Project Docs" class="md-nav__button md-logo" aria-label="Project Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Project Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Project Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        Project Documentation
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-git" class="md-nav__link">
+    1. git
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-uml" class="md-nav__link">
+    2. UML
+  </a>
+  
+    <nav class="md-nav" aria-label="2. UML">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-case-diagram" class="md-nav__link">
+    Use Case Diagram
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state-diagram" class="md-nav__link">
+    State Diagram
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sequence-diagram" class="md-nav__link">
+    Sequence Diagram
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-event-stormingddd" class="md-nav__link">
+    3. Event-Storming/DDD
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-metrics" class="md-nav__link">
+    4. Metrics
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Metrics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sonarcloud" class="md-nav__link">
+    Sonarcloud
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-cyclomatic-complexity-metric" class="md-nav__link">
+    1. Cyclomatic Complexity Metric
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-halstead-complexity-metric" class="md-nav__link">
+    2. Halstead Complexity Metric
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-maintainability-index-metric" class="md-nav__link">
+    3. Maintainability Index Metric
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-raw-metric" class="md-nav__link">
+    4. Raw Metric
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-clean-code" class="md-nav__link">
+    5. Clean Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-build-management-8-continuous-delivery" class="md-nav__link">
+    6. Build Management + 8. Continuous Delivery
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Build Management + 8. Continuous Delivery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build-management" class="md-nav__link">
+    Build Management
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continuos-delivery" class="md-nav__link">
+    Continuos Delivery
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-unit-tests" class="md-nav__link">
+    7. Unit-Tests
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-ide" class="md-nav__link">
+    9. IDE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-dsl" class="md-nav__link">
+    10. DSL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-functional-programming" class="md-nav__link">
+    11. Functional Programming
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-git" class="md-nav__link">
+    1. git
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-uml" class="md-nav__link">
+    2. UML
+  </a>
+  
+    <nav class="md-nav" aria-label="2. UML">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#use-case-diagram" class="md-nav__link">
+    Use Case Diagram
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state-diagram" class="md-nav__link">
+    State Diagram
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sequence-diagram" class="md-nav__link">
+    Sequence Diagram
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-event-stormingddd" class="md-nav__link">
+    3. Event-Storming/DDD
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-metrics" class="md-nav__link">
+    4. Metrics
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Metrics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sonarcloud" class="md-nav__link">
+    Sonarcloud
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-cyclomatic-complexity-metric" class="md-nav__link">
+    1. Cyclomatic Complexity Metric
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-halstead-complexity-metric" class="md-nav__link">
+    2. Halstead Complexity Metric
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-maintainability-index-metric" class="md-nav__link">
+    3. Maintainability Index Metric
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-raw-metric" class="md-nav__link">
+    4. Raw Metric
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-clean-code" class="md-nav__link">
+    5. Clean Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-build-management-8-continuous-delivery" class="md-nav__link">
+    6. Build Management + 8. Continuous Delivery
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Build Management + 8. Continuous Delivery">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#build-management" class="md-nav__link">
+    Build Management
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continuos-delivery" class="md-nav__link">
+    Continuos Delivery
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-unit-tests" class="md-nav__link">
+    7. Unit-Tests
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-ide" class="md-nav__link">
+    9. IDE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-dsl" class="md-nav__link">
+    10. DSL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-functional-programming" class="md-nav__link">
+    11. Functional Programming
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="project-documentation">Project Documentation</h1>
+<p>This is the Documentation for my project.</p>
+<h2 id="1-git">1. git</h2>
+<p><a href="https://github.com/ritik8801/Diabetes-Detection-Web-Application">Github Repository</a></p>
+<h2 id="2-uml">2. UML</h2>
+<p>The UML Diagrams were made in Miro.
+You can find the definitions here: <a href="https://github.com/ritik8801/Diabetes-Detection-Web-Application/tree/main/docs/UML%20Diagrams">UML&gt;</a></p>
+<h3 id="use-case-diagram">Use Case Diagram</h3>
+<p><img alt="file" src="UML%20Diagrams/Use%20Case%20Diagram.jpg" /></p>
+<h3 id="state-diagram">State Diagram</h3>
+<p><img alt="file" src="UML%20Diagrams/State%20Diagram.jpg" /></p>
+<h3 id="sequence-diagram">Sequence Diagram</h3>
+<p><img alt="file" src="UML%20Diagrams/Sequence%20Diagram.jpg" /></p>
+<h2 id="3-event-stormingddd">3. Event-Storming/DDD</h2>
+<iframe width="768" height="432" src="https://miro.com/app/board/uXjVPpa-1xA=/?share_link_id=345011287833" frameBorder="0" scrolling="no" allowFullScreen></iframe>
+
+<h2 id="4-metrics">4. Metrics</h2>
+<h3 id="sonarcloud">Sonarcloud</h3>
+<p>I used <a href="https://sonarcloud.io/project/overview?id=ritik8801_Diabetes-Detection-Web-Application" target="_blank">Sonarcloud</a>, which is sonarqube in the cloud.
+It also gives you the ability to embed lot's of different badges:
+<a href="https://sonarcloud.io/summary/new_code?id=ritik8801_Diabetes-Detection-Web-Application"><img alt="Quality Gate Status" src="https://sonarcloud.io/api/project_badges/measure?project=ritik8801_Diabetes-Detection-Web-Application&amp;metric=alert_status" /></a></p>
+<p>Also, I used Radon to compute various types of metrics mentioned below:</p>
+<h3 id="1-cyclomatic-complexity-metric">1. Cyclomatic Complexity Metric</h3>
+<p>Cyclomatic Complexity corresponds to the number of decisions a block of code contains plus 1. This number (also called McCabe number) is equal to the number of linearly independent paths through the code. This number can be used as a guide when testing conditional logic in blocks.
+The cc command analyzes Python source files and compute Cyclomatic Complexity. The output can be filtered by specifying the -n and -x flags. By default, the complexity score is not displayed, the option -s (show complexity) toggles this behaviour. File or directories exclusion is supported through glob patterns. Every positional argument is interpreted as a path. The program then walks through its children and analyzes Python files. Every block will be ranked from A (best complexity score) to F (worst one). </p>
+<p><img alt="file" src="Metrics/Cyclomatic%20Complexity%20Metric.png" /></p>
+<h3 id="2-halstead-complexity-metric">2. Halstead Complexity Metric</h3>
+<p>Halstead Complexity Metric identifies measurable properties of software, and the relations between them.
+The hal command analyzes Python source files and computes their Halstead complexity metrics. Files can be analyzed as wholes, or in terms of their top-level functions with the -f flag. Excluding files or directories is supported through glob patterns with the -e flag. Every positional argument is interpreted as a path. The program walks through its children and analyzes Python files.</p>
+<p><img alt="file" src="Metrics/Halstead%20Complexity%20Metric.png" /></p>
+<h3 id="3-maintainability-index-metric">3. Maintainability Index Metric</h3>
+<p>Maintainability Index is a software metric which measures how maintainable (easy to support and change) the source code is. The maintainability index is calculated as a factored formula consisting of SLOC (Source Lines Of Code), Cyclomatic Complexity and Halstead volume.
+The mi command analyzes Python source code files and compute the Maintainability Index score. Every positional argument is treated as a starting point from which to walk looking for Python files (as in the cc command). Paths can be excluded with the -e option. The Maintainability Index is always in the range 0-100.</p>
+<p><img alt="file" src="Metrics/Maintainability%20Index%20Metric.png" /></p>
+<h3 id="4-raw-metric">4. Raw Metric</h3>
+<p>The raw command analyzes the given Python modules in order to compute raw metrics. 
+These include:
+LOC: the total number of lines of code
+LLOC: the number of logical lines of code
+SLOC: the number of source lines of code - not necessarily corresponding to the LLOC
+comments: the number of Python comment lines (i.e. only single-line comments #)
+multi: the number of lines representing multi-line strings
+blank: the number of blank lines (or whitespace-only ones)</p>
+<p><img alt="file" src="Metrics/Raw%20Metric.png" /></p>
+<h2 id="5-clean-code">5. Clean Code</h2>
+<p>My Clean Code Development Pdf: <a href="https://github.com/ritik8801/Diabetes-Detection-Web-Application/blob/main/Clean%20Code%20Development/Clean%20Code%20Development.pdf">Clean Code Development</a></p>
+<h2 id="6-build-management-8-continuous-delivery">6. Build Management + 8. Continuous Delivery</h2>
+<p>The build management and continuous delivery are completely cloud based.</p>
+<p>I used Github Actions for the build management and continuos delivery because all the services i use integrate extremely well with it. </p>
+<p>My Github Actions Pipeline yaml: <a href="https://github.com/ritik8801/Diabetes-Detection-Web-Application/blob/main/.github/workflows/github%20actions.yml">github actions.yml</a></p>
+<p><a href="https://github.com/ritik8801/Diabetes-Detection-Web-Application/actions/workflows/github%20actions.yml"><img alt="Build Status" src="https://github.com/ritik8801/Diabetes-Detection-Web-Application/actions/workflows/github%20actions.yml/badge.svg" /></a></p>
+<h3 id="build-management">Build Management</h3>
+<p>The Github Actions Pipeline runs the unit tests by calling pytest. </p>
+<h3 id="continuos-delivery">Continuos Delivery</h3>
+<p>All Tests are run using pytest and also docs are autogenerated using mkdocs in github actions workflow, these docs are generated into 2nd branch called gh-pages<a href="https://github.com/ritik8801/Diabetes-Detection-Web-Application/tree/gh-pages"></a>.
+There is a technical documentation which you can view here at <a href="https://diabetesdetection.pages.dev/">Technical Documentation</a>.</p>
+<p>Also the main documentation code is present at <a href="https://github.com/ritik8801/Diabetes-Detection-Web-Application/blob/main/docs/index.md">Documentation Code</a></p>
+<h2 id="7-unit-tests">7. Unit-Tests</h2>
+<p>The <a href="https://diabetesdetection.pages.dev/testing/tests/">Unit tests</a> are written with the help of the python library pytest.</p>
+<h2 id="9-ide">9. IDE</h2>
+<p>I use visual studio code as main IDE as it has great support for my main languages, namely R and Python.
+It also allows you to use the <a href="https://copilot.github.com/">Github Copilot AI</a>, which is great in my opinion. It is especially useful when trying out new things like libraries, because it often comes up with useful suggestions which helps exploring things faster. It has a number of extensions for different tools like sql, docker which helps to upgrade any project. The in-built explorer of vscode is also great as it easily let's you search through all files in your opened directory. You can even replace code across multiple files at once. </p>
+<p>Shortcuts i like:
+Shift+Enter is very useful. It runs the selected lines of code in a python terminal in the IDE.
+Ctrl+Alt+N is very useful. It runs python file immediately in the IDE.
+Otherwise i'm mostly using the standard shortcuts everyone else uses.</p>
+<h2 id="10-dsl">10. DSL</h2>
+<p>I created a class that uses the style of the Cars example in moodle:
+<a href="https://diabetesdetection.pages.dev/testing/src/modelbuilding/model">"DSL" Class</a>.</p>
+<h2 id="11-functional-programming">11. Functional Programming</h2>
+<p>My Functional Programming Pdf: <a href="https://github.com/ritik8801/Diabetes-Detection-Web-Application/blob/main/Functional%20Programming/Functional%20Programming.pdf">Functional Programming</a></p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.db81ec45.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.4b2c34cd.min.js"></script>
+      
+    
+  </body>
+</html>
