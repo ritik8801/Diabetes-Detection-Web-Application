@@ -16,7 +16,7 @@ Build a model to accurately predict whether the patients in the dataset have dia
 Dataset Description
 The datasets consists of several medical predictor variables and one target variable (Outcome). Predictor variables includes the number of pregnancies the patient has had, their BMI, insulin level, age, and more.
 
-### Variables	Description
+## Variables	Description
 
 Pregnancies -> Number of times pregnant
 
@@ -36,7 +36,7 @@ Age -> Age in years
 
 Outcome -> Class variable (either 0 or 1). 268 of 768 values are 1, and the others are 0
 
-#### Report:
+## Report:
 
 The automated documentation will guide you through project in terms of the assignment:
 
