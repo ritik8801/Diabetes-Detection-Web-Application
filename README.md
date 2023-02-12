@@ -3,7 +3,8 @@
 This repository contains a python app which predicts diabetes based on user input.This is done by training a random forest classifier model on diabetes dataset to classify, diabetic patients as 1 or non diabetic patient as 0.
 
 This project is deployed online with the use of streamlit cloud.
-Link to website is here: https://ritik8801-diabetes-detection--diabetes-detection-web-app-xg5hgo.streamlit.app/
+Link to website is here:
+https://ritik8801-diabetes-detection--diabetes-detection-web-app-xg5hgo.streamlit.app/
 
 Some extra code is also implemented to perform test, create dsl structure.You can view this in the Testing folder of this repository.
 
